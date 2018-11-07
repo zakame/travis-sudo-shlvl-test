@@ -1,0 +1,18 @@
+sudo: required
+dist: precise
+group: deprecated-2017Q1
+language: perl
+
+before_install:
+  - echo "Whoami at before_install"
+  - sudo whoami
+
+install:
+  - echo "Whoami at install"
+  - sudo whoami
+  - $PWD/setup.sh
+
+script:
+  - echo "Whoami at script"
+  - sudo whoami
+  - true
