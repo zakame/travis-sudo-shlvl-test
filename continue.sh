@@ -7,3 +7,4 @@ set -ex
 echo "Whoami at $0"
 sudo whoami
 
+./further.sh
