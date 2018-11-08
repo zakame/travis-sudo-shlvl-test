@@ -10,4 +10,6 @@ sudo whoami
 sudo apt-get install -y curl
 curl https://omnitruck.chef.io/install.sh | sudo bash
 
-chef -v
+/opt/chef/bin/chef-client --version
+
+./even-further.sh

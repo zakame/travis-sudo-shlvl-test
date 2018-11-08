@@ -2,6 +2,8 @@ sudo: required
 dist: precise
 group: deprecated-2017Q1
 language: perl
+matrix:
+  fast_finish: true
 
 before_install:
   - echo "Whoami at before_install"
