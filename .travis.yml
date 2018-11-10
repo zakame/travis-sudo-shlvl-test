@@ -4,6 +4,8 @@ group: deprecated-2017Q1
 language: perl
 matrix:
   fast_finish: true
+env:
+  - SH=bash
 
 before_install:
   - echo "Whoami at before_install"
