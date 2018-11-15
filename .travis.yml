@@ -7,14 +7,9 @@ matrix:
 env:
   - SH=bash
 
-before_install:
-  - echo "Whoami at before_install"
-  - sudo whoami
+before_install: make before_install
 
-install:
-  - echo "Whoami at install"
-  - sudo whoami
-  - $PWD/setup.sh
+install: make install
 
 script:
   - echo "Whoami at script"
